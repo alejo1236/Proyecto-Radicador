@@ -1,0 +1,10 @@
+# Copie este archivo como terraform.tfvars y ajuste los valores.
+project_id = "sgdea-proyecto"   # ID real del proyecto (no el nombre)
+location   = "US"               # igual a la ubicación del dataset BigQuery
+# bucket_suffix = "-uao"        # use si el nombre del bucket ya está tomado
+
+pdf_retention_days     = 3650   # 10 años
+landing_retention_days = 365
+lock_retention         = false  # true = WORM irreversible. NO usar en la PoC.
+
+# auditores = ["user:alejandro.galvez@uao.edu.co"]
